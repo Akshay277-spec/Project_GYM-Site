@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crossfit Fitness</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Andika&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            /* CSS Reset */
+            font-family: 'Andika', sans-serif;
+            margin: 0px;
+            padding: 0px;
+            background: url('bg.png');
+
+        }
+
+        .left {
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            left: 10px;
+            color: white;
+            /* border:2px solid red */
+
+        }
+
+        .logo img {
+            width: 80px;
+        }
+
+        .left div {
+            text-align: center;
+        }
+
+        .mid {
+            display: block;
+            width: 42%;
+            margin: 20px auto;
+            color: white;
+            /* border : 2px solid blue; */
+        }
+
+        .navbar {
+            display: inline-block;
+
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 20px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 17px 7px;
+        }
+
+        .navbar li a:hover {
+            color: aqua;
+            text-decoration: underline;
+            padding: 17px 6px;
+        }
+
+        .right {
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            right: 10px;
+            color: white;
+            /* border:2px solid yellow */
+        }
+
+        .btn {
+            cursor: pointer;
+            border: 2px solid white;
+            background-color: black;
+            color: white;
+            padding: 4px 2px;
+            border-radius: 10px;
+            font-family: 'Andika', sans-serif;
+        }
+
+        .btn:hover {
+            color: aqua;
+            border-color: aqua;
+        }
+
+        .container {
+            font-family: 'Andika', sans-serif;
+            border: 3px solid white;
+            color: white;
+            padding: 50px 59px;
+            margin: 88px 88px;
+            width: 40%;
+            border-radius: 10px;
+        }
+
+        .formgrp input {
+            font-family: 'Andika', sans-serif;
+            border: 2px solid black;
+            display: block;
+            margin: 6px auto;
+            padding: 8px 123px;
+            font-size: 18px;
+            border-radius: 20px;
+        }
+
+        .formgrp button {
+            display: block;
+            width: 30%;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- division for logo -->
+        <div class="left">
+            <div class="logo">
+                <img src="logo.png" alt="">
+                <!-- <h4>Crossfit Fitness</h4> -->
+            </div>
+
+        </div>
+        <!-- division for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">BMI index calculator</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+
+        </div>
+        <!-- division for buttons -->
+        <div class="right">
+            <button class="btn">Call now</button>
+            <button class="btn">Email now</button>
+
+        </div>
+    </header>
+    <div class="container">
+        <h2 style="text-align: center;">Join our gym now!!</h2>
+        <form action="noaction.php">
+            <div class="formgrp">
+                <input type="text" placeholder="Enter your full name">
+            </div>
+            <div class="formgrp">
+                <input type="email" placeholder="Enter your email id">
+            </div>
+            <div class="formgrp">
+                <input type="text" placeholder="Enter your mobile number">
+            </div>
+            <div class="formgrp">
+                <input type="text" placeholder="Enter your gender">
+            </div>
+            <div class="formgrp">
+
+                <button class="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
